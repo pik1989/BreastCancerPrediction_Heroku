@@ -36,7 +36,6 @@ Click==7.0
 cloudpickle==0.8.0
 colorama==0.4.1
 comtypes==1.1.7
-conda==4.7.12
 conda-package-handling==1.6.0
 constantly==15.1.0
 contextlib2==0.5.5
