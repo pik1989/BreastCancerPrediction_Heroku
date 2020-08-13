@@ -65,7 +65,6 @@ ephem==3.7.7.0
 et-xmlfile==1.0.1
 fabric==2.5.0
 fastcache==1.0.2
-fbprophet==0.5
 filelock==3.0.10
 flair==0.4.3
 Flask==1.0.2
@@ -217,7 +216,6 @@ pyreadline==2.1
 pyrsistent==0.14.11
 PySocks==1.6.8
 pyspark==2.4.4
-pystan==2.19.0.0
 pytesseract==0.3.0
 pytest==4.3.1
 pytest-arraydiff==0.3
