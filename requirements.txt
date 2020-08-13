@@ -232,7 +232,6 @@ python-dateutil==2.7.5
 pytorch-transformers==1.2.0
 pytz==2018.9
 PyWavelets==1.0.2
-pywin32==223
 pywinpty==0.5.5
 PyYAML==5.1.2
 pyzmq==18.0.0
