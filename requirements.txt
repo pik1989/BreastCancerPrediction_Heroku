@@ -322,7 +322,6 @@ wikipedia==1.4.0
 win-inet-pton==1.1.0
 win-unicode-console==0.5
 wincertstore==0.2
-windows-curses==2.0.1
 wordcloud==1.6.0
 wrapt==1.11.1
 WTForms==2.2.1
