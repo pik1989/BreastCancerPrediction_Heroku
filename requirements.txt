@@ -149,7 +149,6 @@ multipledispatch==0.6.0
 murmurhash==1.0.2
 mysql-connector-python==8.0.21
 natto-py==0.9.0
-navigator-updater==0.2.1
 nbconvert==5.4.1
 nbformat==4.4.0
 networkx==2.2
