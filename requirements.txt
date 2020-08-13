@@ -34,7 +34,6 @@ ChatterBot==1.0.5
 chatterbot-corpus==1.2.0
 Click==7.0
 cloudpickle==0.8.0
-clyent==1.2.2
 colorama==0.4.1
 comtypes==1.1.7
 conda==4.7.12
