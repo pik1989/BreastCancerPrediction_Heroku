@@ -22,8 +22,6 @@ def loadPage():
 
 @app.route("/", methods=['POST'])
 def cancerPrediction():
-    dataset_url = "https://raw.githubusercontent.com/apogiatzis/breast-cancer-azure-ml-notebook/master/breast-cancer-data.csv"
-    df = pd.read_csv(dataset_url)
     
     model = pickle.load(open("final_model.sav", "rb"))
     
