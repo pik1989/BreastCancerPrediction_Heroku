@@ -20,8 +20,8 @@ def loadPage():
 
 
 
-@app.route("/", methods=['POST'])
-def cancerPrediction():
+@app.route("/predict", methods=['POST'])
+def predict():
     
     model = pickle.load(open("final_model.sav", "rb"))
     
