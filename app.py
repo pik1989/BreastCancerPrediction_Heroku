@@ -8,6 +8,7 @@ from sklearn import metrics
 from flask import Flask, request, render_template
 import re
 import math
+import pickle
 
 app = Flask("__name__")
 
@@ -23,7 +24,8 @@ def loadPage():
 def cancerPrediction():
     dataset_url = "https://raw.githubusercontent.com/apogiatzis/breast-cancer-azure-ml-notebook/master/breast-cancer-data.csv"
     df = pd.read_csv(dataset_url)
-
+    
+    model = pickle.load(open("final_model.sav", "rb"))
     
 
     inputQuery1 = request.form['query1']
@@ -32,23 +34,7 @@ def cancerPrediction():
     inputQuery4 = request.form['query4']
     inputQuery5 = request.form['query5']
 
-    df['diagnosis']=df['diagnosis'].map({'M':1,'B':0})
-
-    train, test = train_test_split(df, test_size = 0.2)
-
-    features = ['texture_mean','perimeter_mean','smoothness_mean','compactness_mean','symmetry_mean']
-
-    train_X = train[features]
-    train_y=train.diagnosis
     
-    test_X= test[features]
-    test_y =test.diagnosis
-
-    model=RandomForestClassifier(n_estimators=100, n_jobs=-1)
-    model.fit(train_X,train_y)
-
-    prediction=model.predict(test_X)
-    metrics.accuracy_score(prediction,test_y)
     
     
     
